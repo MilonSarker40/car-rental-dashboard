@@ -1,0 +1,70 @@
+import React from 'react';
+import '../styles/settings.css';
+
+const Settings = () => {
+    return (
+        <div className='settings'>
+            <div className='settings__wrapper'>
+                <h2 className='settings__title'>Settings</h2>
+                <div className='settings__top'>
+                    <button className='setting__btn'>My Details</button>
+                    <button className='setting__btn active__btn'>Profile</button>
+                    <button className='setting__btn'>Password</button>
+                    <button className='setting__btn'>Email</button>
+                    <button className='setting__btn'>Notification</button>
+                </div>
+                <div className='details__form'>
+                    <h2 className='profile__title'>Profile</h2>
+                    <p className='profile__desc'>Update Your Photo and Personal Details Here</p>
+                    <form>
+                        <div className='form__group'>
+                            <div>
+                                <label>Live In</label>
+                                <input type='text' placeholder='Dhaka Bangladesh' />
+                            </div>
+                            <div>
+                                <label>Street</label>
+                                <input type='text' placeholder='Dhaka 1207' />
+                            </div>
+                        </div>
+                        <div className='form__group'>
+                            <div>
+                                <label>Email</label>
+                                <input type='email' placeholder='example@gmail.com' />
+                            </div>
+                            <div>
+                                <label>Number</label>
+                                <input type='number' placeholder='+8801745******' />
+                            </div>
+                        </div>
+                        <div className='form__group'>
+                            <div>
+                                <label>Date Of Birth</label>
+                                <input type='date' placeholder='dd/mm/yyyy' />
+                            </div>
+                            <div>
+                                <label>Gender</label>
+                                <input type='text' placeholder='Male' />
+                            </div>
+                        </div>
+                        <div className='form__group'>
+                            <div>
+                                <label>Your Photo</label>
+                                <p className='profile-img__desc'>This Will Be Displayed In Your Profile</p>
+                                <input type='file' placeholder='Choose Your Photo' />
+                            </div>
+                            <div>
+                                <div className='profile__img-btns'>
+                                    <button className='dlt__btn'>Delete</button>
+                                    <button className='update__btn'>Update</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default Settings;

@@ -1,0 +1,8 @@
+Car Rental Admin Dashboard
+
+1.npx create-react-app project name
+2.npm i recharts remixicon react-router-dom
+3.rechart -> https://recharts.org/en-US/
+4.https://www.npmjs.com/package/react-circular-progressbar
+npm i react-circular-progressbar
+npm install --save react-circular-progressbar
